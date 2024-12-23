@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Sidebar = () => {
   return (
-    <div className="w-60 h-screen flex flex-col">
+    <div className="w-60 h-screen flex flex-col border border-slate-300">
       {/* Logo */}
       <div className="p-4 flex text-bold text-2xl uppercase justify-start items-center gap-3">
         <img
