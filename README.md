@@ -1,6 +1,10 @@
 # CodeAnt AI
 
-![image](https://github.com/user-attachments/assets/c0cef55a-1eb2-4035-a266-319f86f18137)
+![Screenshot 2024-12-25 154809](https://github.com/user-attachments/assets/d38f196d-9495-4b9e-9e89-b56a4648665e)
+![Screenshot 2024-12-25 183002](https://github.com/user-attachments/assets/b736cbdf-e7c3-4aca-bde4-3ead81909c95)
+![Screenshot 2024-12-25 183010](https://github.com/user-attachments/assets/c0ab8af1-2b5a-4dac-80ee-d3e4acc3117e)
+![image (2)](https://github.com/user-attachments/assets/3c12eb14-e42d-4bde-910f-f40f270feef0)
+
 
 
 Run this project locally
