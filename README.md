@@ -1,5 +1,8 @@
 # CodeAnt AI
 
+![image](https://github.com/user-attachments/assets/c0cef55a-1eb2-4035-a266-319f86f18137)
+
+
 Run this project locally
 ```
 npm intall
