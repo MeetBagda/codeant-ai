@@ -27,21 +27,24 @@ const Signin = () => {
             />
             <span>Codeant ai</span>
           </div>
-          <div className="font-bold text-2xl">Welcome to the codeant ai</div>
+          <div className="font-bold text-xl md:text-2xl">Welcome to the CodeAnt AI</div>
           <div className="w-full flex flex-row justify-center items-center mt-4">
             <Button
               onClick={() => handleButtonClick("SAAS")}
               isActive={activeButton === "SAAS"}
-              className="w-full font-bold "
+              className={`flex flex-row justify-center w-full font-bold ${activeButton === "SAAS" ? '' : 'bg-gray-100'}`}
             >
-              SAAS
+              <div>SAAS</div>
+              <div></div>
             </Button>
             <Button
               onClick={() => handleButtonClick("Self Hosted")}
               isActive={activeButton === "Self Hosted"}
-              className="w-full font-bold"
+              className={`flex flex-row justify-center w-full font-bold ${activeButton === "Self Hosted" ? '' : 'bg-gray-100'}`}
             >
-              Self Hosted
+              
+              <div>Self Hosted</div>
+              <div></div>
             </Button>
           </div>
           <hr />

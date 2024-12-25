@@ -52,7 +52,77 @@ const ContentContainer = () => {
             "databaseSize": "120MB",
             "modifiedAt": "2024-12-23",
             "isPublic": true
-        }
+        },
+        {
+            "repositoryName": "BlogCMS",
+            "language": "PHP",
+            "databaseSize": "1.8GB",
+            "modifiedAt": "2024-12-19",
+            "isPublic": false
+          },
+          {
+            "repositoryName": "ChatApplication",
+            "language": "JavaScript",
+            "databaseSize": "950MB",
+            "modifiedAt": "2024-12-23",
+            "isPublic": true
+          },
+          {
+            "repositoryName": "InventoryManagementSystem",
+            "language": "Python",
+            "databaseSize": "3.4GB",
+            "modifiedAt": "2024-12-21",
+            "isPublic": false
+          },
+          {
+            "repositoryName": "OnlineExamPortal",
+            "language": "Java",
+            "databaseSize": "2.1GB",
+            "modifiedAt": "2024-12-20",
+            "isPublic": false
+          },
+          {
+            "repositoryName": "FitnessTrackerApp",
+            "language": "React Native",
+            "databaseSize": "120MB",
+            "modifiedAt": "2024-12-22",
+            "isPublic": true
+          },
+          {
+            "repositoryName": "StockPricePredictor",
+            "language": "Python",
+            "databaseSize": "6.2GB",
+            "modifiedAt": "2024-12-17",
+            "isPublic": false
+          },
+          {
+            "repositoryName": "MovieRecommendationEngine",
+            "language": "Python",
+            "databaseSize": "7.5GB",
+            "modifiedAt": "2024-12-18",
+            "isPublic": false
+          },
+          {
+            "repositoryName": "RealEstateListingsApp",
+            "language": "Vue.js",
+            "databaseSize": "1.1GB",
+            "modifiedAt": "2024-12-22",
+            "isPublic": true
+          },
+          {
+            "repositoryName": "WeatherDataVisualizer",
+            "language": "JavaScript",
+            "databaseSize": "600MB",
+            "modifiedAt": "2024-12-21",
+            "isPublic": true
+          },
+          {
+            "repositoryName": "CyberSecurityToolkit",
+            "language": "Go",
+            "databaseSize": "500MB",
+            "modifiedAt": "2024-12-19",
+            "isPublic": false
+          }
     ];
 
     const [searchTerm, setSearchTerm] = useState("");
@@ -84,9 +154,9 @@ const ContentContainer = () => {
      }
 
     return (
-        <div className="w-full h-full p-3">
+        <div className="sm:w-full sm:h-full sm:p-3">
             <div className="flex flex-col p-4 bg-white w-full h-full rounded-xl border border-slate-300">
-                <div className=" w-full h-40 p-2 flex flex-row">
+                <div className=" w-full h-40 sm:p-2 flex flex-col md:flex-row gap-3">
                     <div className=" w-full flex flex-col gap-4">
                         <div>
                             <h1 className="font-semibold text-2xl">Repositories</h1>
@@ -137,7 +207,7 @@ const ContentContainer = () => {
 
                         </div>
                     </div>
-                    <div className=" w-full h-10 flex flex-row justify-end gap-2">
+                    <div className=" w-full h-10 flex flex-row  justify-start md:justify-end gap-2">
                         <Button onClick={handleRefresh} className="flex flex-row justify-start gap-2 items-center focus:bg-slate-300 border border-slate-300">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -174,8 +244,8 @@ const ContentContainer = () => {
                         </Button>
                     </div>
                 </div>
-                <hr />
-                <div className=" w-full h-auto">
+                <hr className="mt-5 md:mt-0"/>
+                <div className=" w-full h-auto mt-3 sm:mt-0">
                     <RepositoryList repositories={filteredRepositories} />
                 </div>
             </div>
