@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Button = ({ children, onClick, className }) => {
+const Button = ({ children, onClick, className, isActive  }) => {
   return (
     <button
       onClick={onClick}
-      className={`flex items-center p-2 rounded-lg focus:bg-blue-600 focus:text-white ${className}`}
+      className={`flex items-center p-2 rounded-lg focus:bg-blue-600 focus:text-white ${isActive ? 'bg-blue-600 text-white' : 'bg-gray-100 '} ${className}`}
     >
       {children}
     </button>

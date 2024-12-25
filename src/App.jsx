@@ -1,13 +1,15 @@
 import "./App.css";
 import ContentContainer from "./components/ContentContainer";
+import Signin from "./components/Signin";
 import Layout from "./Layout";
 
 function App() {
   return (
     <div>
-    <Layout>
+      <Signin/>
+    {/* <Layout>
       <ContentContainer/>
-    </Layout>
+    </Layout> */}
       
       </div>
   );
